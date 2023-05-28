@@ -1,5 +1,11 @@
 {
-  "cSpell.words": ["Vitesse"],
+  "cSpell.words": [
+    "inputtext",
+    "primevue",
+    "speeddial",
+    "usetoast",
+    "Vitesse"
+  ],
   "typescript.tsdk": "node_modules/typescript/lib",
   "vite.autoStart": false,
   "editor.codeActionsOnSave": {

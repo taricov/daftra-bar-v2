@@ -3,9 +3,14 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+import PrimeVue from 'primevue/config'
+import 'primevue/resources/themes/lara-light-indigo/theme.css'
+import 'primevue/resources/primevue.min.css'
+import 'primeicons/primeicons.css'
 
 import { onMessage } from 'webext-bridge'
 import { createApp } from 'vue'
+import ToastService from 'primevue/toastservice'
 import App from './views/App.vue'
 import { setupApp } from '~/logic/common-setup'
 
@@ -37,5 +42,8 @@ import { setupApp } from '~/logic/common-setup'
   setupApp(app)
 
   app.use(vuetify)
+  app.use(PrimeVue)
+  app.use(ToastService)
+
   app.mount(root)
 })()
