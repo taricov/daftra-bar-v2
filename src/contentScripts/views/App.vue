@@ -3,7 +3,7 @@
 import 'uno.css'
 import { useMagicKeys, whenever } from '@vueuse/core'
 const showBar
-= ref<boolean>(true)
+= ref<boolean>(false)
 
 const toggleDrawer = (): void => {
   showBar.value = !showBar.value
@@ -19,7 +19,6 @@ onMounted(async () => {
 const keys = useMagicKeys()
 whenever(keys['ctrl+d'], () => {
   showBar.value = !showBar.value
-  console.log('hello', showBar.value)
 })
 // whenever(keys['='], () => {
 //   drawer.value = true
@@ -36,7 +35,7 @@ whenever(keys['ctrl+d'], () => {
   </div>
   <!-- <v-layout>
     <v-container class="w-full"> -->
-  <AppAutocomplete v-model="showBar" />
+  <AppAutocomplete :show-bar="showBar" />
   <!-- </v-container>
   </v-layout> -->
 

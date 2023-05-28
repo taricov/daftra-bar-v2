@@ -1,5 +1,5 @@
-import '@unocss/reset/tailwind.css'
 import 'primevue/resources/themes/lara-light-indigo/theme.css'
+import '@unocss/reset/tailwind.css'
 import 'primevue/resources/primevue.min.css'
 import './main.css'
 import 'uno.css'
