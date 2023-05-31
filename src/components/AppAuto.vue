@@ -1,6 +1,6 @@
 <!-- eslint-disable no-console -->
 <script setup lang="ts">
-// import '../styles/main.css'
+import '../styles/main.css'
 import { useMagicKeys, whenever } from '@vueuse/core'
 import randoms from '~/logic/random-words'
 const showBar = ref<boolean>(true)
@@ -22,11 +22,13 @@ const onCommand = () => {
 }
 onMounted(() => {
 //   onCommand()
+  spotlight.value?.focus()
 })
 </script>
 
 <template>
   <div
+    id="dont_change_mystyles"
     class="h-fit flex m-0 space-x-4 items-center justify-center rounded-lg  px-6 py-10 w-6/12 md:w-7/12 mx-auto fixed -top-[1200px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-[100] "
     :class="[{ 'top-1/2': showBar }, { ' bg-violet-500 backdrop-blur-[3px] bg-opacity-5 shadow-lg': isBg }, { 'transition-all duration-300': isTransition }]"
   >
@@ -43,7 +45,7 @@ onMounted(() => {
         >
       </form>
       <!-- <hr class="!border-gray-100 opacity-40  m-auto"> -->
-      <div class="overflow-y-scroll w-full flex-1 h-[17rem]">
+      <div class="scroll-m-0 overflow-y-scroll w-full flex-1 h-[17rem]">
         <ul class="text-gray-200 h-full">
           <li v-for="match in matches" :key="match" class="hover:bg-gray-100 hover:bg-opacity-10 list-none text-left transition duration-200">
             <div

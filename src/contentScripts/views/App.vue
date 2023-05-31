@@ -137,6 +137,3 @@ whenever(keys['ctrl+d'], () => {
   </v-layout> -->
   <!-- </v-layout> -->
 </template>
-
-<style>
-</style>
