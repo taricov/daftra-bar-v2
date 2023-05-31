@@ -18,3 +18,7 @@ body,
     hover:opacity-100 hover:text-teal-600;
   font-size: 0.9em;
 } */
+
+.shd {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
