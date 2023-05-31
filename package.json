@@ -29,6 +29,7 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "@vuepic/vue-datepicker": "^5.1.2",
     "appwrite": "^11.0.0",
+    "flowbite": "^1.6.5",
     "helmet": "^7.0.0",
     "primeicons": "^6.0.1",
     "primevue": "^3.29.1",
